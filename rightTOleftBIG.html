@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body,html {
+  margin: 0;
+  font: bold 14px 'Open Sans', arial, sans-serif;
+  background: #000;
+}
+ul {
+  margin: 150px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  opacity: 1;
+  background: #fff;
+  transition: opacity 0.3s ease, width 0.3s ease;
+  width: 2%;
+}
+a:hover:after {
+  width: 100%;
+ opacity: 0.5;
+
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Portfolio</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+</body>
+</html>
